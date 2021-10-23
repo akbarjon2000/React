@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import FastFood from "./fastFood";
+import data from "./data"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends Component {
+  render() {
+    return (
+      <div>
+        {data.map(({ id, img, foodType, category, cost, info, editbtn, deletebtn }) => <FastFood
+          key={id}
+          Icon={img}
+          meal={foodType}
+          category={category}
+          cost={cost}
+          info={info}
+          Edit={editbtn}
+          Deletebtn={deletebtn}
+        />)}
+      </div>
+    )
+  }
 }
 
-export default App;
+
