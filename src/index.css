@@ -65,7 +65,7 @@ code {
   height: 900px;
   display: flex;
   flex-direction: column;
-  border: 1px solid;
+
   background-color: white;
 }
 .sidebarbody {
@@ -110,4 +110,30 @@ td {
 .rows {
   display: flex;
   flex-direction: row;
+}
+.exit {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 276px;
+  height: 48px;
+
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  margin-top: 32px;
+}
+.exiticon {
+  margin-left: 40px;
+  margin-right: 9px;
+  padding: 10px 10px;
+  background-color: #f6f6f6;
+  border-radius: 6px;
+}
+.exittext {
+  font-size: 16px;
+  color: #2d3a45;
+}
+.exit:hover {
+  background-color: #fcb600;
+  cursor: pointer;
 }

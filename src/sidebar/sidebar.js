@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Header from "./header"
 import Body from "./body"
 import Footer from "./footer"
+import Exit from "./exit"
 // images
 import { ReactComponent as order } from "./sidebarimg/check-circle.svg"
 import { ReactComponent as archive } from "./sidebarimg/archive.svg"
@@ -69,13 +70,16 @@ const footer = [
         id: 1,
         icon: settings,
         info: "Setings"
-    }, {
+    },
+]
+const exit = [
+    {
         id: 1,
         icon: logout,
-        info: "Setings"
-    },
-
+        info: "Exit"
+    }
 ]
+
 export default class sidebar extends Component {
     render() {
         return (
@@ -84,6 +88,7 @@ export default class sidebar extends Component {
                     <Header />
                     {sidebarObj.map(({ id, icon, info }) => <Body key={id} Icon={icon} info={info} />)}
                     {footer.map(({ id, icon, info }) => <Footer key={id} Icon={icon} info={info} />)}
+                    {exit.map(({ id, icon, info }) => <Exit key={id} Icon={icon} info={info} />)}
                 </div>
             </div>
         )

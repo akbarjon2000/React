@@ -5,9 +5,10 @@ import Student from "./student"
 import Test from "./tst"
 import App from "./App"
 import Sidebar from "./sidebar/sidebar"
+import Navbar from "./navbar/Navbar"
 ReactDOM.render(
-  <div className="main">
-    <Sidebar />
+  <div>
+    <App />
   </div>,
   document.getElementById('root')
 );
