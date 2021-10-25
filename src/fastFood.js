@@ -1,29 +1,24 @@
 import React, { Component } from 'react'
-import "./index.css"
+import "./main.css"
+import { ReactComponent as Oval } from "./icons/Oval.svg"
+
 export default class FastFood extends Component {
     render() {
-        const { Icon } = this.props
+        const { Icons } = this.props
         const { Edit } = this.props
         const { Deletebtn } = this.props
         return (
+
             <div className='base'>
-
-                <table className="items" >
-                    <tr className='row'>
-
-                        <td className='firstraw'><Icon className="icon" />
-                            {this.props.meal}
-                        </td>
-                        <td>{this.props.category}</td>
-                        <td>{this.props.cost}</td>
-                        <td>{this.props.info}</td>
-                        <div className='icons'>
-                            <td><Edit className="edit" /></td>
-                            <td><Deletebtn className="delete" /></td>
-                        </div>
-
-                    </tr>
-                </table>
+                <div className='foodIcon'><Icons className="foodIcon1" /></div>
+                <div className='meal'>{this.props.meal}</div>
+                <div className='mycategories'> <p className='mycategories1'>{this.props.category}</p> </div>
+                <div className='costtext'> <p className='costtext1'>{this.props.cost}</p> </div>
+                <div className='info'><p className='info1'>{this.props.info}</p> </div>
+                <div className='actions'>
+                    <div className='editbtn'><Edit /></div>
+                    <div className='deletebtn'><Deletebtn /></div>
+                </div>
             </div>
         )
     }

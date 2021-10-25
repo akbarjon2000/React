@@ -3,7 +3,7 @@ import { ReactComponent as Oval } from "./icons/Oval.svg"
 import { ReactComponent as edit } from "./icons/Path.svg"
 import { ReactComponent as Delete } from "./icons/trash-2.svg"
 import { ReactComponent as cheeseBurgerMax } from "./icons/cheesBurgerMax.svg"
-import { ReactComponent as LavashMax } from "./icons/Oval Copy 2.svg"
+
 
 
 const data = [
@@ -13,7 +13,7 @@ const data = [
         foodType: "Lavash mini",
         category: "Lavash",
         cost: "5000 KRW",
-        info: "some extra info",
+        info: "Some extra info",
         editbtn: edit,
         deletebtn: Delete
     },
@@ -23,37 +23,37 @@ const data = [
         foodType: "CheeseBurgerMax",
         category: "Burger",
         cost: "8000 KRW",
-        info: "some extra info",
+        info: "Some extra info",
         editbtn: edit,
         deletebtn: Delete
 
     }, {
         id: 3,
-        img: LavashMax,
+        img: Oval,
         foodType: "LavashMax",
         category: "Lavash",
         cost: "7000 KRW",
-        info: "some extra info",
+        info: "Some extra info",
         editbtn: edit,
         deletebtn: Delete
 
     }, {
         id: 4,
         img: Oval,
-        foodType: "Lavash mini",
+        foodType: "Lavash S Sirom",
         category: "Lavash",
-        cost: "5000 KRW",
-        info: "some extra info",
+        cost: "8500 KRW",
+        info: "Some extra info",
         editbtn: edit,
         deletebtn: Delete
 
     }, {
         id: 5,
         img: Oval,
-        foodType: "Lavash mini",
-        category: "Lavash",
+        foodType: "Burger mini",
+        category: "Burger",
         cost: "5000 KRW",
-        info: "some extra info",
+        info: "Some extra info",
         editbtn: edit,
         deletebtn: Delete
 
@@ -63,37 +63,37 @@ const data = [
         foodType: "Lavash mini",
         category: "Lavash",
         cost: "5000 KRW",
-        info: "some extra info",
+        info: "Some extra info",
         editbtn: edit,
         deletebtn: Delete
 
     }, {
         id: 7,
         img: Oval,
-        foodType: "Lavash mini",
-        category: "Lavash",
-        cost: "5000 KRW",
-        info: "some extra info",
+        foodType: "Coca Cola 1L",
+        category: "Drinks",
+        cost: "3500 KRW",
+        info: "Some extra info",
         editbtn: edit,
         deletebtn: Delete
 
     }, {
         id: 8,
         img: Oval,
-        foodType: "Lavash mini",
-        category: "Lavash",
+        foodType: "Burger mini",
+        category: "Burger",
         cost: "5000 KRW",
-        info: "some extra info",
+        info: "Some extra info",
         editbtn: edit,
         deletebtn: Delete
 
     }, {
         id: 9,
         img: Oval,
-        foodType: "Lavash mini",
-        category: "Lavash",
+        foodType: "Coca Cola 1.5L",
+        category: "Drinks",
         cost: "5000 KRW",
-        info: "some extra info",
+        info: "Some extra info",
         editbtn: edit,
         deletebtn: Delete
 
@@ -103,7 +103,7 @@ const data = [
         foodType: "Lavash mini",
         category: "Lavash",
         cost: "5000 KRW",
-        info: "some extra info",
+        info: "Some extra info",
         editbtn: edit,
         deletebtn: Delete
 
@@ -111,4 +111,4 @@ const data = [
 
 
 ]
-export default data
+export { data }

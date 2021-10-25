@@ -53,23 +53,23 @@ const footer = [
     {
         id: 1,
         icon: settings,
-        info: "Setings"
+        info: "Stuff"
     }, {
         id: 1,
         icon: settings,
-        info: "Setings"
+        info: "Notifications"
     }, {
         id: 1,
         icon: settings,
-        info: "Setings"
+        info: "Delivery Cost"
     }, {
         id: 1,
         icon: settings,
-        info: "Setings"
+        info: "Offers and Complains"
     }, {
         id: 1,
         icon: settings,
-        info: "Setings"
+        info: "Map"
     },
 ]
 const exit = [

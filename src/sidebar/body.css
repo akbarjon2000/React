@@ -28,6 +28,13 @@
   background-color: #fcb600;
   cursor: pointer;
 }
+.sidebarbody:hover .icons {
+  background-color: transparent;
+  color: whitesmoke;
+}
+.sidebarbody:hover .titles {
+  color: white;
+}
 .sidebarFooter {
   display: flex;
   flex-direction: row;
@@ -45,4 +52,7 @@
   margin-left: 25px;
   margin-right: 9px;
   opacity: 100%;
+}
+.sidebarFooter:hover {
+  cursor: pointer;
 }

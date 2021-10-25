@@ -4,6 +4,9 @@ import { ReactComponent as Filter } from "./filter.svg"
 import { ReactComponent as Search } from "./search.svg"
 export default class Navbar extends Component {
     render() {
+        const Change = (e) => {
+            console.log(e)
+        }
         return (
             <div className='nobody'>
                 <div className='nav'>
@@ -13,8 +16,8 @@ export default class Navbar extends Component {
                     </div>
                     <div className='searchbar'>
                         <div>
-                            <input type="search" placeholder="Search" className="searchInput"></input>
-                            <button className="searchbtn"><Search /></button>
+                            <input type="text" placeholder="Search" className="searchInput"></input>
+                            <button className="searchbtn" onClick={Change}><Search /></button>
                         </div>
                         <div className='filter'>
                             <Filter />
@@ -27,11 +30,6 @@ export default class Navbar extends Component {
                     <div className='cost'><p3>COST</p3></div>
                     <div className='add'><p4>ADDITIONAL INFO</p4></div>
                     <div className='action'><p5>ACTION</p5></div>
-
-
-
-
-
                 </div>
             </div >
         )
