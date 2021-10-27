@@ -1,15 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Student from "./student"
-import Test from "./tst"
-import App from "./App"
-import Sidebar from "./sidebar/sidebar"
-import Navbar from "./navbar/Navbar"
+// import Sidebar from "./sidebar/sidebar"
+// import Orders from "./orders/Orders"
+import Products from "./products/Products"
+
 ReactDOM.render(
-  <div>
-    <App />
-  </div>,
+  <React.StrictMode>
+    {/* <Orders /> */}
+    <Products />
+    {/* <Sidebar /> */}
+  </React.StrictMode>,
   document.getElementById('root')
 );
 // If you want to start measuring performance in your app, pass a function

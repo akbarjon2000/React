@@ -1,0 +1,132 @@
+.orders {
+  display: flex;
+  flex-direction: row;
+}
+.togglebar {
+  width: 686px;
+  height: 80px;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.sorts {
+  width: 591px;
+  height: 48px;
+  background-color: #edeff3;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.item {
+  width: 25%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #2d3a45;
+  opacity: 40%;
+}
+.item:hover {
+  background-color: white;
+  width: 162px;
+  height: 36px;
+  border-radius: 18px;
+  opacity: unset;
+  color: black;
+}
+.twosomeplace {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 169px;
+  height: 80px;
+  background-color: white;
+  margin-left: 2px;
+}
+.inside {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 77px;
+  height: 48px;
+  border-radius: 30px;
+  padding-left: 6px;
+  padding-right: 6px;
+  background-color: #edeff3;
+}
+.first {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+}
+.vert1 {
+  width: 14px;
+  height: 6px;
+  border: 1px solid #8d9ba8;
+  border-radius: 3px;
+}
+.first:hover {
+  background-color: white;
+}
+.first:hover .vert1 {
+  background-color: #8d9ba8;
+}
+.marg {
+  margin-bottom: 2px;
+}
+.second {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+}
+.hor1 {
+  width: 6px;
+  height: 14px;
+  border: 1px solid #8d9ba8;
+  border-radius: 3px;
+}
+.hor2 {
+  width: 6px;
+  height: 10px;
+  border: 1px solid #8d9ba8;
+  border-radius: 3px;
+  margin-left: 2px;
+  position: relative;
+  top: -2px;
+}
+.second:hover {
+  background-color: white;
+}
+
+.second:hover .hor1 {
+  background-color: #8d9ba8;
+}
+.second:hover .hor2 {
+  background-color: #8d9ba8;
+}
+
+/* .active-true {
+  background-color: white;
+  width: 162px;
+  height: 36px;
+  border-radius: 18px;
+  opacity: unset;
+  color: black;
+} */

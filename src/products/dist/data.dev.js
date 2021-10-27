@@ -5,13 +5,13 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.data = void 0;
 
-var _Oval = require("./icons/Oval.svg");
+var _Oval = require("../icons/Oval.svg");
 
-var _Path = require("./icons/Path.svg");
+var _Path = require("../icons/Path.svg");
 
-var _trash = require("./icons/trash-2.svg");
+var _trash = require("../icons/trash-2.svg");
 
-var _cheesBurgerMax = require("./icons/cheesBurgerMax.svg");
+var _cheesBurgerMax = require("../icons/cheesBurgerMax.svg");
 
 var data = [{
   id: 1,

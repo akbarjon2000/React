@@ -79,3 +79,9 @@
   font-size: 13px;
   font-family: "Montserrat", sans-serif;
 }
+/* .sidebarborder {
+  border-left: 30px solid;
+} */
+.delete-true {
+  display: none;
+}

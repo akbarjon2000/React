@@ -51,23 +51,23 @@ const footer = [
         info: "Setings"
     },
     {
-        id: 1,
+        id: 2,
         icon: settings,
         info: "Stuff"
     }, {
-        id: 1,
+        id: 3,
         icon: settings,
         info: "Notifications"
     }, {
-        id: 1,
+        id: 4,
         icon: settings,
         info: "Delivery Cost"
     }, {
-        id: 1,
+        id: 5,
         icon: settings,
         info: "Offers and Complains"
     }, {
-        id: 1,
+        id: 6,
         icon: settings,
         info: "Map"
     },
@@ -81,12 +81,23 @@ const exit = [
 ]
 
 export default class sidebar extends Component {
+    state = { active: null }
+
     render() {
+        const activate = (id) => {
+            this.setState({ active: id })
+            console.log(this.state.active, "on")
+        }
         return (
             <div className='sidebar'>
                 <div className='headerrow'>
                     <Header />
-                    {sidebarObj.map(({ id, icon, info }) => <Body key={id} Icon={icon} info={info} />)}
+                    {sidebarObj.map(({ id, icon, info }) => (
+                        <div key={id} onClick={() => activate(id)}>
+                            < Body active={this.state.active === id} key={id} Icon={icon} info={info} />
+                        </div>
+                    )
+                    )}
                     {footer.map(({ id, icon, info }) => <Footer key={id} Icon={icon} info={info} />)}
                     {exit.map(({ id, icon, info }) => <Exit key={id} Icon={icon} info={info} />)}
                 </div>

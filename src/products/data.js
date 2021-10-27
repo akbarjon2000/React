@@ -1,8 +1,7 @@
-import React, { Component } from "react"
-import { ReactComponent as Oval } from "./icons/Oval.svg"
-import { ReactComponent as edit } from "./icons/Path.svg"
-import { ReactComponent as Delete } from "./icons/trash-2.svg"
-import { ReactComponent as cheeseBurgerMax } from "./icons/cheesBurgerMax.svg"
+import { ReactComponent as Oval } from "../icons/Oval.svg"
+import { ReactComponent as edit } from "../icons/Path.svg"
+import { ReactComponent as Delete } from "../icons/trash-2.svg"
+import { ReactComponent as cheeseBurgerMax } from "../icons/cheesBurgerMax.svg"
 
 
 
