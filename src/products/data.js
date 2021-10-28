@@ -8,7 +8,7 @@ import { ReactComponent as cheeseBurgerMax } from "../icons/cheesBurgerMax.svg"
 const data = [
     {
         id: 1,
-        img: Oval,
+        Img: Oval,
         foodType: "Lavash mini",
         category: "Lavash",
         cost: "5000 KRW",
@@ -18,7 +18,7 @@ const data = [
     },
     {
         id: 2,
-        img: cheeseBurgerMax,
+        Img: cheeseBurgerMax,
         foodType: "CheeseBurgerMax",
         category: "Burger",
         cost: "8000 KRW",
@@ -28,7 +28,7 @@ const data = [
 
     }, {
         id: 3,
-        img: Oval,
+        Img: Oval,
         foodType: "LavashMax",
         category: "Lavash",
         cost: "7000 KRW",
@@ -38,7 +38,7 @@ const data = [
 
     }, {
         id: 4,
-        img: Oval,
+        Img: Oval,
         foodType: "Lavash S Sirom",
         category: "Lavash",
         cost: "8500 KRW",
@@ -48,7 +48,7 @@ const data = [
 
     }, {
         id: 5,
-        img: Oval,
+        Img: Oval,
         foodType: "Burger mini",
         category: "Burger",
         cost: "5000 KRW",
@@ -58,7 +58,7 @@ const data = [
 
     }, {
         id: 6,
-        img: Oval,
+        Img: Oval,
         foodType: "Lavash mini",
         category: "Lavash",
         cost: "5000 KRW",
@@ -68,7 +68,7 @@ const data = [
 
     }, {
         id: 7,
-        img: Oval,
+        Img: Oval,
         foodType: "Coca Cola 1L",
         category: "Drinks",
         cost: "3500 KRW",
@@ -78,7 +78,7 @@ const data = [
 
     }, {
         id: 8,
-        img: Oval,
+        Img: Oval,
         foodType: "Burger mini",
         category: "Burger",
         cost: "5000 KRW",
@@ -88,7 +88,7 @@ const data = [
 
     }, {
         id: 9,
-        img: Oval,
+        Img: Oval,
         foodType: "Coca Cola 1.5L",
         category: "Drinks",
         cost: "5000 KRW",
@@ -98,7 +98,7 @@ const data = [
 
     }, {
         id: 10,
-        img: Oval,
+        Img: Oval,
         foodType: "Lavash mini",
         category: "Lavash",
         cost: "5000 KRW",

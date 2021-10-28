@@ -12,12 +12,13 @@ export default class Main extends Component {
         }
         return (
             <div >
-                {data.map(({ id, img, foodType, category, cost, info, editbtn, deletebtn }) =>
+                {data.map(({ id, Img, foodType, category, cost, info, editbtn, deletebtn }) =>
                 (
                     <div key={id} onClick={() => Delete(id)}>
                         <FastFood
                             key={id}
-                            Icons={img}
+                            id={id}
+                            Icons={Img}
                             meal={foodType}
                             category={category}
                             cost={cost}

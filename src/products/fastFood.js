@@ -2,13 +2,15 @@ import React, { Component } from 'react'
 import "../main.css"
 
 export default class FastFood extends Component {
-    state = { showlist: null }
+
+    state = { showlist: 0 }
     render() {
         const Delete = (id) => {
-            this.setState = ({
+            this.setState({
                 showlist: id
             })
-            console.log(this.state.showlist)
+            console.log(id, "is clicked")
+            console.log(this.state.showlist);
         }
         const { Icons } = this.props
         const { Edit } = this.props
@@ -27,6 +29,7 @@ export default class FastFood extends Component {
                 <div className='actions'>
                     <div className='editbtn'><Edit /></div>
                     <div onClick={() => Delete(this.props.id)} className='deletebtn' ><Deletebtn /></div>
+
                 </div>
             </div>
         )

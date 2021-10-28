@@ -13,7 +13,6 @@ export default class Products extends Component {
           <Main className="menu" />
           <div className="addd">Add More</div>
         </div>
-
       </div>
     )
   }

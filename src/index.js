@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 // import Sidebar from "./sidebar/sidebar"
 // import Orders from "./orders/Orders"
+// import Lesson from "./lesson projects/delete, filter, search"
 import Products from "./products/Products"
 
 ReactDOM.render(
@@ -10,6 +11,7 @@ ReactDOM.render(
     {/* <Orders /> */}
     <Products />
     {/* <Sidebar /> */}
+    {/* <Lesson /> */}
   </React.StrictMode>,
   document.getElementById('root')
 );

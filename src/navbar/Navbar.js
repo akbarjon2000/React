@@ -1,12 +1,11 @@
 import React, { Component } from 'react'
+import { data } from "../products/data"
 import "./navbar.css"
 import { ReactComponent as Filter } from "./filter.svg"
 import { ReactComponent as Search } from "./search.svg"
 export default class Navbar extends Component {
     render() {
-        const Change = (e) => {
-            console.log(e)
-        }
+
         return (
             <div className='nobody'>
                 <div className='nav'>
@@ -16,8 +15,8 @@ export default class Navbar extends Component {
                     </div>
                     <div className='searchbar'>
                         <div>
-                            <input type="text" placeholder="Search" className="searchInput"></input>
-                            <button className="searchbtn" onClick={Change}><Search /></button>
+                            <input onChange={Filter} type="text" placeholder="Search" className="searchInput"></input>
+                            <button className="searchbtn" ><Search /></button>
                         </div>
                         <div className='filter'>
                             <Filter />
