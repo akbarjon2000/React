@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import Sidebar from "../sidebar/sidebar"
 import Navbar from "../navbar/Navbar"
-import Main from "./Main"
+
+import FastFood from "./fastFood";
 import "../main.css"
 export default class Products extends Component {
   render() {
@@ -10,7 +11,7 @@ export default class Products extends Component {
         <Sidebar className="sidebarborder" />
         <div>
           <Navbar />
-          <Main className="menu" />
+          <FastFood className="menu" />
           <div className="addd">Add More</div>
         </div>
       </div>

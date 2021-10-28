@@ -2,31 +2,31 @@ import React, { Component } from 'react'
 import student from "./studentData"
 export default class Lesson extends Component {
     state = {
-        student: student
-    }
+        student: student,
 
+    }
     render() {
         const onDelete = (id) => {
             let newData = this.state.student.filter((value) => value.id !== id)
             this.setState({ student: newData })
         }
-
         const onfilter = (e) => {
             let newData = student.filter(value => value.name.toUpperCase().includes(e.target.value.toUpperCase()))
             this.setState({ student: newData })
-
-
         }
+        const onSelect = (e) => {
+            console.log(e.target.options.selectedIndex === 1)
+            if (e.target.options.selectedIndex === 1) {
 
-
+            }
+        }
         return (
-
             <div >
                 <h1>Student Info</h1>
                 <input type="search" placeholder="search" onChange={onfilter} ></input>
-                <select id="something">
-                    <option id="firstname">firstname</option>
-                    <option id="lastname" >lastname</option>
+                <select id="something" onClick={onSelect}>
+                    <option id="firstname" onClick={this.state.filterByName}>firstname</option>
+                    <option id="lastname" onClick={this.state.filterByLastname} >lastname</option>
                     <option id="status" >status</option>
                 </select><br />
                 <input placeholder='edit name'></input>

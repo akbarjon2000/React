@@ -1,14 +1,19 @@
-import { ReactComponent as Oval } from "../icons/Oval.svg"
+import oval from "../icons/Oval.png"
+import cheeseBurgerMax from "../icons/Oval Copy.png"
+import lavashMax from "../icons/Oval Copy 2.png"
+import lavashSirom from "../icons/Oval Copy 3.png"
+import BurgerMini from "../icons/Oval Copy 4.png"
+import CocaCola from "../icons/Oval Copy 5.png"
+import CocaCola1 from "../icons/Oval Copy 7.png"
 import { ReactComponent as edit } from "../icons/Path.svg"
 import { ReactComponent as Delete } from "../icons/trash-2.svg"
-import { ReactComponent as cheeseBurgerMax } from "../icons/cheesBurgerMax.svg"
 
 
 
 const data = [
     {
         id: 1,
-        Img: Oval,
+        Img: oval,
         foodType: "Lavash mini",
         category: "Lavash",
         cost: "5000 KRW",
@@ -28,7 +33,7 @@ const data = [
 
     }, {
         id: 3,
-        Img: Oval,
+        Img: lavashMax,
         foodType: "LavashMax",
         category: "Lavash",
         cost: "7000 KRW",
@@ -38,7 +43,7 @@ const data = [
 
     }, {
         id: 4,
-        Img: Oval,
+        Img: lavashSirom,
         foodType: "Lavash S Sirom",
         category: "Lavash",
         cost: "8500 KRW",
@@ -48,7 +53,7 @@ const data = [
 
     }, {
         id: 5,
-        Img: Oval,
+        Img: BurgerMini,
         foodType: "Burger mini",
         category: "Burger",
         cost: "5000 KRW",
@@ -58,7 +63,7 @@ const data = [
 
     }, {
         id: 6,
-        Img: Oval,
+        Img: lavashSirom,
         foodType: "Lavash mini",
         category: "Lavash",
         cost: "5000 KRW",
@@ -68,7 +73,7 @@ const data = [
 
     }, {
         id: 7,
-        Img: Oval,
+        Img: CocaCola,
         foodType: "Coca Cola 1L",
         category: "Drinks",
         cost: "3500 KRW",
@@ -78,7 +83,7 @@ const data = [
 
     }, {
         id: 8,
-        Img: Oval,
+        Img: BurgerMini,
         foodType: "Burger mini",
         category: "Burger",
         cost: "5000 KRW",
@@ -88,7 +93,7 @@ const data = [
 
     }, {
         id: 9,
-        Img: Oval,
+        Img: CocaCola1,
         foodType: "Coca Cola 1.5L",
         category: "Drinks",
         cost: "5000 KRW",
@@ -98,7 +103,7 @@ const data = [
 
     }, {
         id: 10,
-        Img: Oval,
+        Img: lavashSirom,
         foodType: "Lavash mini",
         category: "Lavash",
         cost: "5000 KRW",
