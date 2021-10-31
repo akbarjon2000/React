@@ -11,13 +11,20 @@ export default class Lesson extends Component {
             this.setState({ student: newData })
         }
         const onfilter = (e) => {
+            console.log(e)
             let newData = student.filter(value => value.name.toUpperCase().includes(e.target.value.toUpperCase()))
             this.setState({ student: newData })
         }
         const onSelect = (e) => {
-            console.log(e.target.options.selectedIndex === 1)
+            console.log(e)
+            if (e.target.options.selectedIndex === 0) {
+                console.log("name")
+            }
             if (e.target.options.selectedIndex === 1) {
-
+                console.log("lastname")
+            }
+            if (e.target.options.selectedIndex === 2) {
+                console.log("status")
             }
         }
         return (

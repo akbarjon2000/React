@@ -2,18 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 // import Sidebar from "./sidebar/sidebar"
-// import Orders from "./orders/Orders"
+import Orders from "./orders/Orders"
 import Lesson from "./lesson projects/delete, filter, search"
 import Products from "./products/Products"
 import FastFood from "./products/fastFood"
-
+import Navbar from "./navbar/Navbar"
+import App from "./lesson projects/filteringInputs/components/App"
 ReactDOM.render(
   <React.StrictMode>
-    {/* <Orders /> */}
-    <Products />
-    {/* <Sidebar /> */}
-    {/* <Lesson /> */}
-    {/* <FastFood /> */}
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -31,9 +31,9 @@
   /* margin-right: 14px; */
   /* margin: 22px; */
 }
-.circle p {
+.circle div {
   position: relative;
-  left: 1px;
+
   bottom: 3px;
 }
 .addnew p {

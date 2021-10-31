@@ -1,40 +1,44 @@
 import React, { Component } from 'react'
 import "../navbar/navbar.css"
 import "./orders.css"
+import { navObj } from "./NavObj"
+import { toggle } from "./NavObj"
 export default class OrderNav extends Component {
     state = {
-        first: false,
-        second: false,
-        third: false,
-        fourth: false
+        obj: navObj,
+        active: null,
     }
     render() {
-        const change = (e) => {
-            this.setState({ [e.target.id]: true })
-            console.log(e.target.id, "clicked")
+        const change = (id) => {
+            this.setState({ active: id })
+        }
+        const toggle = (id) => {
+            console.log(id)
         }
         return (
             <div className='nobody'>
                 <div className='nav'>
                     <div className='addnew'>
-                        <div className='circle'><p>+</p></div>
+                        <div className='circle'><div>+</div></div>
                         <p>Add a new product</p>
                     </div>
                     <div className='togglebar'>
-                        <div className='sorts'>
-                            <div onClick={change} id='first' className={`item active-${this.state.first}`}>New</div>
-                            <div onClick={change} id='second' className={`item active-${this.state.second}`}>Accepted</div>
-                            <div onClick={change} id='third' className={`item active-${this.state.third}`}>Sent</div>
-                            <div onClick={change} id='fourth' className={`item active-${this.state.fourth}`}>Closed</div>
+                        <div className='sorts' >
+                            {this.state.obj.map((value) => (
+                                <div onClick={() => change(value.id)}
+                                    id={value.id}
+                                    key={value.id}
+                                    className={`item activeMe-${this.state.active === value.id}`}>{value.info}</div>
+                            ))}
                         </div>
                     </div>
                     <div className='twosomeplace'>
-                        <div className='inside'>
-                            <div className='first'>
+                        <div className='inside' >
+                            <div className='first' value="first" onClick={(e) => toggle(e)}>
                                 <div className='vert1 marg'></div>
                                 <div className='vert1'></div>
                             </div>
-                            <div className='second'>
+                            <div className='second' value="second" onClick={(e) => toggle(e)}>
                                 <div className='hor1'></div>
                                 <div className='hor2'></div>
                             </div>
