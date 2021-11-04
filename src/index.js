@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import Products from "./products/Products"
 
-import Lesson from "./lesson projects/delete, filter, search"
+import { Lesson } from "./lesson projects/delete, filter, search"
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <Lesson />
+    <Products />
   </React.StrictMode>,
   document.getElementById('root')
 );

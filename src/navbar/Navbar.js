@@ -10,7 +10,7 @@ export default class Navbar extends Component {
             <div className='nobody'>
                 <div className='nav'>
                     <div className='addnew'>
-                        <div className='circle'><p>+</p></div>
+                        <div className='mycircle'><div>+</div></div>
                         <p>Add a new product</p>
                     </div>
                     <div className='searchbar'>

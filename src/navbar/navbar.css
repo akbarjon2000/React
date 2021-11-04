@@ -15,7 +15,7 @@
   align-items: center;
   background-color: white;
 }
-.circle {
+.mycircle {
   width: 36px;
   height: 36px;
   border: 1px solid;
@@ -34,7 +34,7 @@
 .circle div {
   position: relative;
 
-  bottom: 3px;
+  bottom: 30px;
 }
 .addnew p {
   width: fit-content;
