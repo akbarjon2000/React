@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import "./body.css"
-import "../index.css"
+import "../../index.css"
 export default class body extends Component {
 
     render() {

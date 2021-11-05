@@ -24,6 +24,14 @@ code {
   align-items: center;
   margin-bottom: 8px;
 }
+.base:hover {
+  box-shadow: 0px 20px 25px 0px #b0b1b56e;
+  cursor: pointer;
+}
+.addd:hover {
+  box-shadow: 0px 20px 25px 0px #b0b1b56e;
+  cursor: pointer;
+}
 .items {
   width: 992px;
   height: 60px;

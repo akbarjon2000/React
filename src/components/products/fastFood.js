@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import "../main.css"
+import "./main.css"
 import { data } from "./data"
 import { ReactComponent as Edit } from "../icons/Path.svg"
 import { ReactComponent as Deletebtn } from "../icons/trash-2.svg"
@@ -27,12 +27,10 @@ export default class FastFood extends Component {
         }
         return (
             <>
-
                 {
                     this.state.Data.length ?
                         this.state.Data.map((value) => (
                             <div className={`base delete-${this.state.active === value.id}`}>
-                                {/* <div className='foodIcon'><Icons className="foodIcon1" /></div> */}
                                 <img src={value.Img} className='foodIcon1'></img>
                                 <div className='meal'>{value.foodType}</div>
                                 <div className='mycategories'> <p className='mycategories1'>{value.category}</p> </div>
@@ -41,13 +39,11 @@ export default class FastFood extends Component {
                                 <div className='actions'>
                                     <div className='editbtn'><Edit /></div>
                                     <div onClick={() => Delete(value.id)} className='deletebtn' ><Deletebtn /></div>
-
                                 </div>
                             </div>
                         ))
                         : <Restore onClick={Reset}><i class="fa-solid fa-trash-arrow-up"></i> Restore</Restore>
                 }
-
             </>
         )
     }

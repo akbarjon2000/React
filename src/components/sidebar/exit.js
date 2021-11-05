@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import "../index.css"
+import "../../index.css"
 export default class exit extends Component {
     render() {
         const { Icon } = this.props

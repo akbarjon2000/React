@@ -34,11 +34,11 @@ export default class OrderNav extends Component {
                     </div>
                     <div className='twosomeplace'>
                         <div className='inside' >
-                            <div className='first' value="first" onClick={(e) => toggle(e)}>
+                            <div className='first' id="first" onClick={(e) => toggle(e)}>
                                 <div className='vert1 marg'></div>
                                 <div className='vert1'></div>
                             </div>
-                            <div className='second' value="second" onClick={(e) => toggle(e)}>
+                            <div className='second' id="second" onClick={(e) => toggle(e)}>
                                 <div className='hor1'></div>
                                 <div className='hor2'></div>
                             </div>

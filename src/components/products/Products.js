@@ -3,7 +3,7 @@ import Sidebar from "../sidebar/sidebar"
 import Navbar from "../navbar/Navbar"
 
 import FastFood from "./fastFood";
-import "../main.css"
+import "./main.css"
 export default class Products extends Component {
   render() {
     return (
