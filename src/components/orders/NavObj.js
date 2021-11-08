@@ -14,12 +14,12 @@ export const navObj = [
         info: "Closed"
     },
 ]
-export const toggle = [
-    {
-        id: 1,
+// export const toggle = [
+//     {
+//         id: 1,
 
-    },
-    {
-        id: 2
-    }
-]
+//     },
+//     {
+//         id: 2
+//     }
+// ]

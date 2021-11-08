@@ -16,15 +16,19 @@ export default class New extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            data: newObj,
+            data: newObj
         }
     }
-    render() {
 
+    render() {
+        const onDelete = (id) => {
+            let refresh = this.state.data.filter((value) => value.id !== id)
+            this.setState({ data: refresh })
+        }
         return (
             <>
                 {this.state.data.map((value) => (
-                    <Container >
+                    <Container key={value.id}>
                         <Container.one>
                             <Container.one.colone className='col1'>
                                 <div>
@@ -140,7 +144,7 @@ export default class New extends Component {
                                 }}>Branch:</p>
                                 <p className='branch'>Fast Food {value.branch}</p>
                             </div>
-                            <div className='x'><X /></div>
+                            <div className='x' onClick={() => onDelete(value.id)}><X /></div>
                             <div className='tick'><Tick /></div>
                         </Container.four>
 

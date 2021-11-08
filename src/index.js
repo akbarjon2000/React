@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Products from "./components/products/Products"
 import Orders from "./components/orders/Orders"
-
+import Lesson from "./lesson projects/buyurtmalar/index"
 
 ReactDOM.render(
   <React.StrictMode>
-    <Orders />
+    <Lesson />
   </React.StrictMode>,
   document.getElementById('root')
 );

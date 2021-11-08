@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.toggle = exports.navObj = void 0;
+exports.navObj = void 0;
 var navObj = [{
   id: 1,
   info: "New"
@@ -16,11 +16,13 @@ var navObj = [{
 }, {
   id: 4,
   info: "Closed"
-}];
+}]; // export const toggle = [
+//     {
+//         id: 1,
+//     },
+//     {
+//         id: 2
+//     }
+// ]
+
 exports.navObj = navObj;
-var toggle = [{
-  id: 1
-}, {
-  id: 2
-}];
-exports.toggle = toggle;
