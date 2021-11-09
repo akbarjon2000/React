@@ -85,7 +85,7 @@ export default class Index extends Component {
                 </div>
                 {
                     this.state.students.length ? this.state.students.map((value) => (
-                        <Card active={this.state.active === value.id} value={value} key={value.id} onDelete={onDelete} onEdit={onEdit} onSave={onSave} />
+                        <Card active={this.state.active === value.id} value={value} key={value.id} onDelete={onDelete} onEdit={onEdit} onSave={onAdd} />
                     )
                     )
                         : <button onClick={onRefresh}>Refresh</button   >

@@ -80,10 +80,16 @@
   border: 1px solid #8d9ba8;
   border-radius: 3px;
 }
+.background-white {
+  background-color: white;
+}
 .first:hover {
   background-color: white;
 }
 .first:hover .vert1 {
+  background-color: #8d9ba8;
+}
+.background-black {
   background-color: #8d9ba8;
 }
 .marg {

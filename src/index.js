@@ -4,10 +4,11 @@ import './index.css';
 import Products from "./components/products/Products"
 import Orders from "./components/orders/Orders"
 import Lesson from "./lesson projects/buyurtmalar/index"
-
+import Hooks from ".//components/hooks"
+import Orders2 from "./components/orders2"
 ReactDOM.render(
   <React.StrictMode>
-    <Lesson />
+    <Orders2 />
   </React.StrictMode>,
   document.getElementById('root')
 );
