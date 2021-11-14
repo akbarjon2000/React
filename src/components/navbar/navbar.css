@@ -5,17 +5,17 @@
 .nav {
   display: flex;
 }
-.addnew {
-  width: 205px;
-  height: 80px;
-  margin: 0 2px 20px 2px;
+.addnews {
+  width: 205px !important;
+  height: 80px !important;
+  margin: 0 2px 20px 2px !important;
 
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background-color: white;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  background-color: white !important;
 }
-.mycircle {
+.myplus {
   width: 36px;
   height: 36px;
   border: 1px solid;
@@ -28,14 +28,18 @@
   color: white;
   font-size: 30px;
   margin-left: 36px;
+
   /* margin-right: 14px; */
   /* margin: 22px; */
 }
-
-.addnew p {
+.myplus:hover {
+  cursor: pointer;
+}
+.addnews p {
   width: fit-content;
-  position: relative;
-  right: -14px;
+  position: relative !important;
+  margin: 0;
+  right: -14px !important;
   /* margin-left: 14px; */
 }
 .searchbar {

@@ -1,5 +1,5 @@
 .sidebarbody {
-  width: 194px;
+  width: 276px !important;
   height: 48px;
   margin-bottom: 4px;
   padding: 0 40px;
@@ -17,10 +17,17 @@
   border-radius: 6px;
   background-color: #f6f6f6;
 }
-.titles {
+.footericons {
+  width: 16px;
+  height: 16px;
+  border-radius: 6px;
+  background-color: #f6f6f6;
+}
+.sidetitles {
+  margin: 0;
   margin-left: 22px;
   font-size: 15px;
-  line-height: 17, 58px;
+  /* line-height: 17, 58px; */
   color: #2d3a45;
   font-weight: 600;
 }
@@ -33,7 +40,7 @@
   background-color: transparent;
   color: whitesmoke;
 }
-.sidebarbody:hover .titles {
+.sidebarbody:hover .sidetitles {
   color: white;
   transition: 0.5s;
 }
@@ -65,6 +72,6 @@
   background-color: #fcb600;
   color: white;
 }
-.active-true .titles {
+.active-true .sidetitles {
   color: white;
 }

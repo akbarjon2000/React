@@ -18,6 +18,7 @@ export default class Index extends Component {
         const onchange = ({ target }) => {
             this.setState({ [target.name]: target.value })
             console.log(target.value, target.name)
+            this.state.students.filter((value) => target.name)
         }
         const onAdd = () => {
             if (
@@ -63,6 +64,7 @@ export default class Index extends Component {
         const onEdit = (value) => {
             console.log(value.id);
             this.setState({
+
                 active: value.id,
                 name: value.name,
                 surname: value.lastname,
@@ -75,20 +77,35 @@ export default class Index extends Component {
         return (
             <Container>
                 <div>
-                    <input value={this.state.name} onChange={onchange} type="text" placeholder='name' name='name'></input>
-                    <input value={this.state.surname} onChange={onchange} type="text" placeholder='surename' name='surname'></input>
-                    <input value={this.state.status} onChange={onchange} type="text" placeholder='status' name='status'></input>
-                    <button onClick={onAdd} style={{
-                        width: "120px",
-                        marginBottom: "10px"
-                    }}>Add</button>
+                    <input
+                        value={this.state.name}
+                        onChange={onchange}
+                        type="text" placeholder='name' name='name'></input>
+                    <input
+                        value={this.state.surname}
+                        onChange={onchange}
+                        type="text" placeholder='surename' name='surname'></input>
+                    <input
+                        value={this.state.status}
+                        onChange={onchange}
+                        type="text" placeholder='status' name='status'></input>
+                    <button
+                        onClick={onAdd}
+                        style={{
+                            width: "120px",
+                            marginBottom: "10px"
+                        }}>Add</button>
                 </div>
                 {
                     this.state.students.length ? this.state.students.map((value) => (
-                        <Card active={this.state.active === value.id} value={value} key={value.id} onDelete={onDelete} onEdit={onEdit} onSave={onAdd} />
+                        <Card active={this.state.active === value.id} value={value} key={value.id}
+                            onDelete={onDelete} onEdit={onEdit} onSave={onAdd}
+                        />
                     )
                     )
-                        : <button onClick={onRefresh}>Refresh</button   >
+                        : <button
+                            onClick={onRefresh}
+                        >Refresh</button   >
                 }
             </Container>
         )

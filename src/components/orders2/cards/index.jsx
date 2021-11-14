@@ -10,6 +10,22 @@ import { ReactComponent as Tick } from "../../icons/tick.svg"
 
 const Card = () => {
     const [card, setCard] = useState(cardsObj)
+    // const onDelete1 = (id) => {
+    //     let newData = card.new.filter((value) => value.id !== id);
+    //     setCard(newData);
+    // }
+    // const onDelete2 = (id) => {
+    //     let newData = card.received.filter((value) => value.id !== id);
+    //     setCard(newData);
+    // }
+    // const onDelete3 = (id) => {
+    //     let newData = card.sent.filter((value) => value.id !== id);
+    //     setCard(newData);
+    // }
+    // const onDelete4 = (id) => {
+    //     let newData = card.closed.filter((value) => value.id !== id);
+    //     setCard(newData);
+    // }
     return (
         <Container>
             <Container.col1>
@@ -36,7 +52,9 @@ const Card = () => {
                     }}>
                         <p style={{
                             opacity: "70%",
-                        }}>{card.length}</p>
+                        }}>
+                            {card.new.length}
+                        </p>
                     </div>
                 </div>
                 <div style={{
@@ -51,7 +69,7 @@ const Card = () => {
                     <div className='bigCircle'></div>
                     <p style={{ fontWeight: "700" }}>1,123,000 KRW</p>
                 </div>
-                {card.map((value) => (
+                {card.new.map((value) => (
                     <div key={value.id} style={{
                         width: "234px",
                         height: "345px",
@@ -152,7 +170,7 @@ const Card = () => {
                                     marginLeft: "16px"
                                 }}>{value.operator}</p>
                             </div>
-                            <div className='x' style={{ marginTop: "11px" }} ><X style={{ marginRight: "0" }} /></div>
+                            <div className='x' style={{ marginTop: "11px" }}  ><X style={{ marginRight: "0" }} /></div>
 
                         </div>
                         <div style={{
@@ -208,7 +226,7 @@ const Card = () => {
                 }}>
                     <p style={{
                         opacity: "70%",
-                    }}>{card.length}</p>
+                    }}>{card.received.length}</p>
                 </div>
             </div>
                 <div style={{
@@ -223,7 +241,7 @@ const Card = () => {
                     <div className='bigCircle' style={{ backgroundColor: "rgba(17, 172, 253, 1)" }}></div>
                     <p style={{ fontWeight: "700" }}>12,123,000 KRW</p>
                 </div>
-                {card.map((value) => (
+                {card.received.map((value) => (
                     <div key={value.id} style={{
                         width: "234px",
                         height: "345px",
@@ -324,7 +342,7 @@ const Card = () => {
                                     marginLeft: "16px"
                                 }}>{value.operator}</p>
                             </div>
-                            <div className='x' style={{ marginTop: "11px" }} ><X style={{ marginRight: "0" }} /></div>
+                            <div className='x' style={{ marginTop: "11px" }}  ><X style={{ marginRight: "0" }} /></div>
 
                         </div>
                         <div style={{
@@ -382,7 +400,7 @@ const Card = () => {
                     <p style={{
                         opacity: "70%",
 
-                    }}>{card.length}</p>
+                    }}>{card.sent.length}</p>
                 </div>
             </div>
                 <div style={{
@@ -397,7 +415,7 @@ const Card = () => {
                     <div className='bigCircle' style={{ backgroundColor: "rgba(252, 182, 0, 1)" }}></div>
                     <p style={{ fontWeight: "700" }}>2,523,000 KRW</p>
                 </div>
-                {card.map((value) => (
+                {card.sent.map((value) => (
                     <div key={value.id} style={{
                         width: "234px",
                         height: "345px",
@@ -558,7 +576,7 @@ const Card = () => {
                     <p style={{
                         opacity: "70%",
 
-                    }}>{card.length}</p>
+                    }}>{card.closed.length}</p>
                 </div>
             </div>
                 <div style={{
@@ -575,7 +593,7 @@ const Card = () => {
                     }}></div>
                     <p style={{ fontWeight: "700" }}>10,123,000 KRW</p>
                 </div>
-                {card.map((value) => (
+                {card.closed.map((value) => (
                     <div key={value.id} style={{
                         width: "234px",
                         height: "345px",
@@ -676,7 +694,7 @@ const Card = () => {
                                     marginLeft: "16px"
                                 }}>{value.operator}</p>
                             </div>
-                            <div className='x' style={{ marginTop: "11px" }} ><X style={{ marginRight: "0" }} /></div>
+                            <div className='x' style={{ marginTop: "11px" }}  ><X style={{ marginRight: "0" }} /></div>
 
                         </div>
                         <div style={{

@@ -7,7 +7,7 @@ export default class body extends Component {
         const { Icon } = this.props
         return (
             <div className={`sidebarbody active-${this.props.active}`} style={{ display: "flex", flexDirection: "row" }}>
-                <Icon className='icons'></Icon> <p className='titles'>{this.props.info}</p>
+                <Icon className='sideicons'></Icon> <p className='sidetitles'>{this.props.info}</p>
             </div>
         )
     }

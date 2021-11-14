@@ -1,12 +1,12 @@
-import oval from "../icons/Oval.png"
-import cheeseBurgerMax from "../icons/Oval Copy.png"
-import lavashMax from "../icons/Oval Copy 2.png"
-import lavashSirom from "../icons/Oval Copy 3.png"
-import BurgerMini from "../icons/Oval Copy 4.png"
-import CocaCola from "../icons/Oval Copy 5.png"
-import CocaCola1 from "../icons/Oval Copy 7.png"
-import { ReactComponent as edit } from "../icons/Path.svg"
-import { ReactComponent as Delete } from "../icons/trash-2.svg"
+import oval from "../components/icons/Oval.png"
+import cheeseBurgerMax from "../components/icons/Oval Copy.png"
+import lavashMax from "../components/icons/Oval Copy 2.png"
+import lavashSirom from "../components/icons/Oval Copy 3.png"
+import BurgerMini from "../components/icons/Oval Copy 4.png"
+import CocaCola from "../components/icons/Oval Copy 5.png"
+import CocaCola1 from "../components/icons/Oval Copy 7.png"
+import { ReactComponent as edit } from "../components/icons/Path.svg"
+import { ReactComponent as Delete } from "../components/icons/trash-2.svg"
 
 
 

@@ -1,14 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Products from "./components/products/Products"
-import Orders from "./components/orders/Orders"
-import Lesson from "./lesson projects/buyurtmalar/index"
-import Hooks from ".//components/hooks"
-import Orders2 from "./components/orders2"
+import Context from "./context"
+import App from "./App"
+
 ReactDOM.render(
   <React.StrictMode>
-    <Orders2 />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );

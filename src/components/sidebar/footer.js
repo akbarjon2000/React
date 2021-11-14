@@ -5,7 +5,7 @@ export default class footer extends Component {
         const { Icon } = this.props
         return (
             <div className='sidebarFooter'>
-                <Icon className="icons" />
+                <Icon className="footericons" />
                 <p>{this.props.info}</p>
             </div>
         )
