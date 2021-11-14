@@ -1,5 +1,5 @@
 .sidebarbody {
-  width: 276px !important;
+  width: 195px !important;
   height: 48px;
   margin-bottom: 4px;
   padding: 0 40px;
@@ -10,12 +10,12 @@
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
 }
-.icons {
+.sideicons {
   width: 16px;
   height: 16px;
   padding: 10px 10px;
   border-radius: 6px;
-  background-color: #f6f6f6;
+  background-color: rgba(246, 246, 246, 1);
 }
 .footericons {
   width: 16px;

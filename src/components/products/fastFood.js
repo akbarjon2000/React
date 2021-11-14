@@ -5,6 +5,8 @@ import { ReactComponent as Edit } from "../icons/Path.svg"
 import { ReactComponent as Deletebtn } from "../icons/trash-2.svg"
 import { Restore } from './styled'
 import { MyContext } from '../../context'
+import { BrowserRouter, NavLink, Link, useNavigate } from 'react-router-dom'
+
 const FastFood = () => {
     const [active] = useState(null)
     const [mydata, setData] = useContext(MyContext)

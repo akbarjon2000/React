@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, NavLink, Link, Route, Routes, useNavigate } from "react-router-dom"
+import { BrowserRouter, NavLink, Link, Route, Routes, useNavigate, Outlet } from "react-router-dom"
 import { Container } from './style';
 import Card from '../buyurtmalar/index';
 import Home from './home';

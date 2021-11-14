@@ -98,7 +98,7 @@ export default class sidebar extends Component {
                         </div>
                     )
                     )}
-                    {footer.map(({ id, icon, info }) => <Footer key={id} Icon={icon} info={info} />)}
+                    {/* {footer.map(({ id, icon, info }) => <Footer key={id} Icon={icon} info={info} />)} */}
                     {exit.map(({ id, icon, info }) => <Exit key={id} Icon={icon} info={info} />)}
                 </div>
             </div>
