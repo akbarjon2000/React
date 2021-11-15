@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react'
 import { MyContext } from '../../context'
-import cardsObj from "../../utils/cardObjects/new"
+import cardsObj from "../../utils/cardObj"
 const Index = () => {
     const value = useContext(MyContext)
     const [count, setCount] = useState(0)

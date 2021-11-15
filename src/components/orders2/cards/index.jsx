@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import cardsObj from '../../../utils/cardObjects/new';
+import React, { useState, useContext } from 'react'
+
 import { Container } from './style';
 import "./stylesheet.css"
 import { ReactComponent as Clock } from "../../icons/clock.svg"
@@ -7,9 +7,9 @@ import { ReactComponent as Remark } from "../../icons/Remark.svg"
 import { ReactComponent as User } from "../../icons/user.svg"
 import { ReactComponent as X } from "../../icons/x.svg"
 import { ReactComponent as Tick } from "../../icons/tick.svg"
-
+import { MyCardContext } from '../../../contex/OrdersContex';
 const Card = () => {
-    const [card, setCard] = useState(cardsObj)
+    const [card, setCard] = useContext(MyCardContext)
     // const onDelete1 = (id) => {
     //     let newData = card.new.filter((value) => value.id !== id);
     //     setCard(newData);
