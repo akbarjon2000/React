@@ -18,29 +18,35 @@ const sidebarObj = [
     {
         id: 1,
         icon: order,
-        info: "Orders"
+        info: "Orders",
+        pathname: "/Orders"
     },
     {
         id: 2,
         icon: archive,
-        info: "Products"
+        info: "Products",
+        pathname: "/Products"
     }, {
         id: 3,
         icon: category,
-        info: "Category"
+        info: "Category",
+        pathname: "/Category"
     }, {
         id: 4,
         icon: branch,
-        info: "Branches"
+        info: "Branches",
+        pathname: "/Branches"
     }, {
         id: 5,
         icon: customers,
-        info: "Customers"
+        info: "Customers",
+        pathname: "/Customers"
     },
     {
         id: 6,
         icon: report,
-        info: "Report"
+        info: "Report",
+        pathname: "/Report"
     },
 
 ]
@@ -92,9 +98,9 @@ export default class sidebar extends Component {
             <div className='sidebar'>
                 <div className='headerrow'>
                     <Header />
-                    {sidebarObj.map(({ id, icon, info }) => (
+                    {sidebarObj.map(({ id, icon, info, pathname }) => (
                         <div key={id} onClick={() => activate(id)}>
-                            < Body active={this.state.active === id} key={id} Icon={icon} info={info} />
+                            < Body active={this.state.active === id} key={id} Icon={icon} info={info} pathname={pathname} />
                         </div>
                     )
                     )}

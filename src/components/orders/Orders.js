@@ -7,7 +7,7 @@ export default class Orders extends Component {
     render() {
         return (
             <div className='orders'>
-                <Sidebar />
+                {/* <Sidebar /> */}
                 <div>
                     <OrderNav />
                     <New />

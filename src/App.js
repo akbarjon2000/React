@@ -14,12 +14,15 @@ import Orders2 from "./components/orders2"
 import Category from './category/Category';
 import Drawer from './components/drawers/products drawer/antDrawer1';
 import Drawer2 from './components/drawers/buyurtmalarEditDrawer/index'
+import MyDrawer from './components/drawers/MyDrawer/MyDrawer';
+import Sidebar from './components/sidebar/sidebar';
+import Reducer from './lesson projects/reducer';
 const App = () => {
     return (
         <OrdersContex>
             <UserContext>
                 <Context>
-                    <Drawer2 />
+                    <Reducer />
                 </Context>
             </UserContext>
         </OrdersContex>
