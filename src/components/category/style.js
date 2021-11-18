@@ -62,3 +62,20 @@ width:200px;
 margin-left:50px;
 margin-right:19px
 `
+export const Restore = styled.button`
+height: 60px;
+width: 992px;
+left: 338px;
+top: 156px;
+border-radius: 6px;
+background-color:orange;
+color:white;
+margin:0 0 8px 38px;
+font-size: 25px;
+outline:unset;
+border:none;
+:hover{
+    box-shadow: 0px 5px 15px #B0B1B56E;
+    cursor:pointer;
+}
+`

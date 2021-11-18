@@ -3,7 +3,7 @@ import React, { useState, useContext } from 'react'
 import "./navbar.css"
 import { ReactComponent as Filter } from "./filter.svg"
 import { ReactComponent as Search } from "./search.svg"
-import { MyContext } from '../../context'
+import { MyContext } from '../../../context'
 const Navbar = () => {
     const [mydata, setData] = useContext(MyContext)
     const [data] = useState(mydata);

@@ -10,28 +10,28 @@ export const data = [
         Delete: Delete
     },
     {
-        id: 1,
+        id: 2,
         uz: "Lavash uz",
         eng: "Lavash eng",
         main: "Lavash",
         Edit: edit,
         Delete: Delete
     }, {
-        id: 1,
+        id: 3,
         uz: "Hot Drinks uz",
         eng: "Hot Drinks eng",
         main: "Drinks",
         Edit: edit,
         Delete: Delete
     }, {
-        id: 1,
+        id: 4,
         uz: "Cold Drinks uz",
         eng: "Cold Drinks eng",
         main: "Drinks",
         Edit: edit,
         Delete: Delete
     }, {
-        id: 1,
+        id: 5,
         uz: "Other Drinks uz",
         eng: "Other Drinks eng",
         main: "Drinks",
