@@ -21,6 +21,9 @@ import Sidebar from './components/sidebar/sidebar';
 import Reducer from './lesson projects/reducer';
 import Branches from './components/branches';
 import Customers from "./components/customers/index"
+//LESSON PROJECTS:
+import { Home } from './lesson projects/useMemo&memo/home';
+import Backend from "./lesson projects/Backend/index"
 const App = () => {
     return (
         <OrdersContex>
@@ -28,7 +31,7 @@ const App = () => {
                 <Context>
                     <BranchContext>
                         <CustomersContext>
-                            <Sidebar />
+                            <Backend />
                         </CustomersContext>
                     </BranchContext>
                 </Context>
