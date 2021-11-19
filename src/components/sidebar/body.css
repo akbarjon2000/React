@@ -1,5 +1,5 @@
 .sidebarbody {
-  width: 195px !important;
+  width: 256px !important;
   height: 48px;
   margin-bottom: 4px;
   padding: 0 40px;
@@ -11,8 +11,8 @@
   border-bottom-right-radius: 6px;
 }
 .sideicons {
-  width: 16px;
-  height: 16px;
+  width: 36px;
+  height: 36px;
   padding: 10px 10px;
   border-radius: 6px;
   background-color: rgba(246, 246, 246, 1);
@@ -68,9 +68,9 @@
 .active-true {
   background-color: #fcb600;
 }
-.active-true .icons {
-  background-color: #fcb600;
-  color: white;
+.active-true .sideicons {
+  background-color: #fcb600 !important;
+  color: white !important;
 }
 .active-true .sidetitles {
   color: white;

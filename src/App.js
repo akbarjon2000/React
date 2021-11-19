@@ -5,6 +5,8 @@ import './index.css';
 import Context from "./context"
 import UserContext from './userContext';
 import { OrdersContex } from './contex/OrdersContex';
+import BranchContext from './contex/branchContex';
+import { CustomersContext } from './contex/CustomersContext';
 //Components
 import Products from "./components/products/Products"
 import Orders from "./components/orders/Orders"
@@ -18,12 +20,17 @@ import MyDrawer from './components/drawers/MyDrawer/MyDrawer';
 import Sidebar from './components/sidebar/sidebar';
 import Reducer from './lesson projects/reducer';
 import Branches from './components/branches';
+import Customers from "./components/customers/index"
 const App = () => {
     return (
         <OrdersContex>
             <UserContext>
                 <Context>
-                    <Branches />
+                    <BranchContext>
+                        <CustomersContext>
+                            <Sidebar />
+                        </CustomersContext>
+                    </BranchContext>
                 </Context>
             </UserContext>
         </OrdersContex>

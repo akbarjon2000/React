@@ -76,11 +76,7 @@ code {
 
   background-color: white;
 }
-.sidebarbody {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
+
 .sidebarborder {
   border-left: 3px solid red;
 }
